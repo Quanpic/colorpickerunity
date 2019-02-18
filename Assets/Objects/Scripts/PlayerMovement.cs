@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
-    public float speed = 4f;
+    public float speed;
     // Start is called before the first frame update
     void Start()
     {
@@ -14,7 +14,7 @@ public class PlayerMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        speed += 0.0055f;    
+        speed += 0.0015f;    
         transform.Translate(Vector2.up * speed * Time.deltaTime);
     }
 }
