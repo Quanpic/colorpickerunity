@@ -4,10 +4,11 @@ using UnityEngine;
 
 public class DestroyObstacles : MonoBehaviour
 {
-    private void OnTriggerEnter2D(Collider2D other)
+    void OnTriggerExit2D(Collider2D other)
     {
         if (other.tag == "Block")
         {
+            print("chefesfefs");
             Destroy(other);
         }
     }

@@ -20,7 +20,10 @@ public class MovePlayer : MonoBehaviour
 
     private void OnMouseDown()
     {
+        if (!(GameObject.Find("Game Over")))
+        {
             deltaX = Camera.main.ScreenToWorldPoint(Input.mousePosition).x - player.position.x;
+        }
     }
 
     private void OnMouseDrag()
@@ -28,8 +31,12 @@ public class MovePlayer : MonoBehaviour
             Vector2 mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
             if (mousePos.x > 2.6f) mousePos.x = 2.6f;
             if (mousePos.x < -2.6f) mousePos.x = -2.6f;
-            player.position = Vector2.MoveTowards(player.position, new Vector2(mousePos.x, player.position.y),
-            speed - Time.deltaTime);
+            if (!(GameObject.Find("Game Over")))
+            {
+                player.position = Vector2.MoveTowards(player.position, new Vector2(mousePos.x, player.position.y),
+                    speed - Time.deltaTime);
+            }
+
             //player.position = new Vector2(mousePos.x, player.position.y);
     }
 }
