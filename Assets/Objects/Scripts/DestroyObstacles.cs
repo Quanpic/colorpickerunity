@@ -4,14 +4,20 @@ using UnityEngine;
 
 public class DestroyObstacles : MonoBehaviour
 {
+    //public GameObject block;
     void OnTriggerExit2D(Collider2D other)
     {
         if (other.tag == "Block")
         {
-            print("chefesfefs");
-            Destroy(other);
+            Destroy(other.gameObject);
         }
+
+//        if (other.tag == "DestroyBlockEffect")
+//        {
+//            Destroy(other.GetComponent<ParticleSystem>());
+//        }
     }
+    
 
     // Start is called before the first frame update
     void Start()

@@ -5,6 +5,10 @@ TagManager:
   serializedVersion: 2
   tags:
   - Block
+  - Background
+  - Spawner
+  - Destroyer
+  - DestroyBlockEffect
   layers:
   - Default
   - TransparentFX

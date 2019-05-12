@@ -8,6 +8,6 @@ public class Restart : MonoBehaviour
 {
     public void Replay()
     {
-        SceneManager.LoadScene("SampleScene");
+        SceneManager.LoadScene("Game");
     }
 }

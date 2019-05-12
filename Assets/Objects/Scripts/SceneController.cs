@@ -8,6 +8,7 @@ public class SceneController : MonoBehaviour
     // Start is called before the first frame update
     public void StartGame()
     {
-        SceneManager.LoadScene("SampleScene");
+        SceneManager.UnloadSceneAsync("Menu");
+        SceneManager.LoadScene("Game");
     }
 }

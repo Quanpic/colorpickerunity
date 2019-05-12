@@ -57,8 +57,11 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Objects\Scripts\BackgroundMov.cs" />
     <Compile Include="Assets\Objects\Scripts\DestroyObstacles.cs" />
+    <Compile Include="Assets\Objects\Scripts\Home.cs" />
     <Compile Include="Assets\Objects\Scripts\MovePlayer.cs" />
+    <Compile Include="Assets\Objects\Scripts\Pause.cs" />
     <Compile Include="Assets\Objects\Scripts\PlayerMovement.cs" />
     <Compile Include="Assets\Objects\Scripts\Restart.cs" />
     <Compile Include="Assets\Objects\Scripts\SceneController.cs" />
@@ -126,11 +129,18 @@
     <None Include="Assets\TextMesh Pro\Resources\LineBreaking Following Characters.txt" />
     <None Include="Assets\TextMesh Pro\Examples &amp; Extras\Fonts\LiberationSans - OFL.txt" />
     <None Include="Assets\TextMesh Pro\Examples &amp; Extras\Fonts\Bangers - OFL.txt" />
+    <None Include="Assets\Pixel Font - Tripfive\_README.txt" />
     <Reference Include="Unity.PackageManagerUI.Editor">
       <HintPath>C:/Users/User/Documents/ColorPicker/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.CollabProxy.Editor">
       <HintPath>C:/Users/User/Documents/ColorPicker/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Editor">
+      <HintPath>C:/Users/User/Documents/ColorPicker/Library/ScriptAssemblies/Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="XiaomiSupport">
+      <HintPath>C:/Users/User/Documents/ColorPicker/Library/ScriptAssemblies/XiaomiSupport.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Analytics.DataPrivacy">
       <HintPath>C:/Users/User/Documents/ColorPicker/Library/ScriptAssemblies/Unity.Analytics.DataPrivacy.dll</HintPath>
@@ -347,6 +357,12 @@
     </Reference>
     <Reference Include="Unity.Analytics.Tracker">
       <HintPath>C:/Users/User/Documents/ColorPicker/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.Tracker.dll</HintPath>
+    </Reference>
+    <Reference Include="ChannelPurchase">
+      <HintPath>C:/Users/User/Documents/ColorPicker/Library/PackageCache/com.unity.xiaomi@1.0.3/ChannelPurchase.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityStore">
+      <HintPath>C:/Users/User/Documents/ColorPicker/Library/PackageCache/com.unity.xiaomi@1.0.3/UnityStore.dll</HintPath>
     </Reference>
     <Reference Include="netstandard">
       <HintPath>C:/Program Files/Unity/Editor/Data/NetStandard/ref/2.0.0/netstandard.dll</HintPath>
