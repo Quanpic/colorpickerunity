@@ -9,6 +9,8 @@ TagManager:
   - Spawner
   - Destroyer
   - DestroyBlockEffect
+  - MusicManager
+  - SoundManager
   layers:
   - Default
   - TransparentFX

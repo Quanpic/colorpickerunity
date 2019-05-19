@@ -36,6 +36,8 @@ public class Pause : MonoBehaviour
         PauseText.enabled = false;
         //GameObject.Find("Play").SetActive(false);
         HomeButton.gameObject.SetActive(false);
+        PlayButton.GetComponent<Image>().enabled = false;
+        PlayButton.GetComponent<Button>().enabled = false;
         countdownText.GetComponent<Text>().enabled = true;
         countdownText.text = currentTime.ToString();
         timerOn = true;
@@ -73,6 +75,8 @@ public class Pause : MonoBehaviour
                 //PlayButton.gameObject.SetActive(true);
                 PauseText.enabled = true;
                 HomeButton.gameObject.SetActive(true);
+                PlayButton.GetComponent<Image>().enabled = true;
+                PlayButton.GetComponent<Button>().enabled = true;
             }
         }
     }

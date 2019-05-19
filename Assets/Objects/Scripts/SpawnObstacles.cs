@@ -36,6 +36,9 @@ public class SpawnObstacles : MonoBehaviour
         if (other.name == "CurBlock")
         {
             score++;
+
+            GameObject.FindGameObjectWithTag("SoundManager").GetComponent<SoundManager>().PlaySound("broke");
+                
             int randColor = Random.Range(0, animations.Length);
             while (randColor == usedRandomColor)
             {
@@ -57,6 +60,10 @@ public class SpawnObstacles : MonoBehaviour
             GameObject.Find("Quad").GetComponent<BackgroundMov>().speed = 0;
             GameObject.FindWithTag("Destroyer").GetComponent<PlayerMovement>().speed = 0;
             Destroy(player);
+
+            //if ((GameObject.Find("SettingsStorage").GetComponent<SettingsStorage>().musicSetting != true) && (GameObject.Find("SettingsStorage").GetComponent<SettingsStorage>().soundSetting == true)) GameObject.FindGameObjectWithTag("MusicManager").GetComponent<MusicManager>().StopMusic();
+            if ((GameObject.Find("SettingsStorage").GetComponent<SettingsStorage>().musicSetting == true) && (GameObject.Find("SettingsStorage").GetComponent<SettingsStorage>().soundSetting == true)) GameObject.FindGameObjectWithTag("MusicManager").GetComponent<MusicManager>().StopMusic();
+            GameObject.FindGameObjectWithTag("SoundManager").GetComponent<SoundManager>().PlaySound("lose");
             //print("Game over!");
 
             

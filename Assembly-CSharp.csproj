@@ -57,17 +57,25 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Objects\Scripts\BackgroundAwake.cs" />
     <Compile Include="Assets\Objects\Scripts\BackgroundMov.cs" />
     <Compile Include="Assets\Objects\Scripts\DestroyObstacles.cs" />
+    <Compile Include="Assets\Objects\Scripts\GoMainMenu.cs" />
     <Compile Include="Assets\Objects\Scripts\Home.cs" />
     <Compile Include="Assets\Objects\Scripts\MovePlayer.cs" />
+    <Compile Include="Assets\Objects\Scripts\MusicManager.cs" />
+    <Compile Include="Assets\Objects\Scripts\OnToggleChanged.cs" />
     <Compile Include="Assets\Objects\Scripts\Pause.cs" />
     <Compile Include="Assets\Objects\Scripts\PlayerMovement.cs" />
     <Compile Include="Assets\Objects\Scripts\Restart.cs" />
     <Compile Include="Assets\Objects\Scripts\SceneController.cs" />
+    <Compile Include="Assets\Objects\Scripts\Settings.cs" />
+    <Compile Include="Assets\Objects\Scripts\SettingsStorage.cs" />
+    <Compile Include="Assets\Objects\Scripts\SoundManager.cs" />
     <Compile Include="Assets\Objects\Scripts\Spawn.cs" />
     <Compile Include="Assets\Objects\Scripts\SpawnObstacles.cs" />
     <Compile Include="Assets\Objects\Scripts\StartGame.cs" />
+    <Compile Include="Assets\Objects\Scripts\StartMenu.cs" />
     <Compile Include="Assets\Objects\Scripts\StartPlayer.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01_UGUI.cs" />
